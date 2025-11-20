@@ -56,7 +56,7 @@ This ensures that your settings stay the same even after refreshing or reopening
 When the user closes the settings modal, the current configuration is saved:
 
 ```js
-localStorage.setItem("jokeSettings", JSON.stringify(settings));
+   localStorage.setItem("jokeSettings", JSON.stringify(settings));
 
 ### 📜 License
 
