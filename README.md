@@ -36,9 +36,6 @@ project/
 │── script.js
 │── README.md
 
-yaml
-Копировать код
-
 ---
 
 ## 📦 Installation
@@ -52,12 +49,8 @@ No backend required.
 
 ⚙️ How Settings Work
 Saving
-js
-Копировать код
 localStorage.setItem("jokeSettings", JSON.stringify(settings));
 Loading
-js
-Копировать код
 JSON.parse(localStorage.getItem("jokeSettings"));
 📜 License
 Free to use and modify.
