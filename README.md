@@ -1,99 +1,63 @@
-# Random-Joke-Generator
-🎭 Joke Generator App
+# 🎭 Joke Generator
 
-A simple and customizable Joke Generator built with HTML, CSS, and JavaScript using the JokeAPI.
-Users can choose joke language, type, and blacklist categories. Settings are saved automatically using LocalStorage.
+A simple and customizable Joke Generator built with HTML, CSS, and JavaScript using JokeAPI.  
+Users can choose joke language, type, and blacklist categories. All settings are saved in LocalStorage.
 
-🚀 Features
+---
 
-Fetches jokes from JokeAPI v2
+## 🚀 Features
 
-Supports:
+- Fetch jokes from **JokeAPI v2**
+- Supports single and two-part jokes
+- Choose joke language
+- Choose joke type (single / twopart / any)
+- Filter jokes using blacklist flags
+- **Settings saved automatically in LocalStorage**
+- Fade animation when new joke appears
+- Simple settings modal
 
-Single jokes
+---
 
-Two-part jokes (setup + delivery)
+## 🛠️ Technologies Used
 
-Language selection
+- JavaScript (Fetch API)
+- HTML5
+- CSS3
+- LocalStorage
+- JokeAPI: https://v2.jokeapi.dev/
 
-Blacklist filters (e.g., dark, NSFW, political, etc.)
+---
 
-Joke type selection (single / twopart / any)
+## 📁 File Structure
 
-Settings saved in LocalStorage
-
-Smooth fade animation when jokes update
-
-Responsive modal for settings
-
-🛠️ Technologies Used
-
-JavaScript (Fetch API, DOM manipulation)
-
-HTML5
-
-CSS3
-
-JokeAPI (https://v2.jokeapi.dev/)
-
-LocalStorage for saving settings
-
-📦 Installation
-
-Download or clone the project:
-
-git clone https://github.com/your-repo/joke-generator.git
-
-
-Open the project folder:
-
-cd joke-generator
-
-
-Open index.html in your browser.
-
-No backend or build tools required.
-
-📑 How It Works
-Fetching jokes
-
-Jokes are loaded with:
-
-fetch(`https://v2.jokeapi.dev/joke/Any?lang=${language}&blacklistFlags=${blacklist}&type=${jokeType}`)
-
-Saving settings
-
-When the user closes the settings modal:
-
-localStorage.setItem("jokeSettings", JSON.stringify(settings));
-
-Loading settings
-
-On page load:
-
-const saved = JSON.parse(localStorage.getItem("jokeSettings"));
-
-File Structure
-/project
+project/
 │── index.html
 │── style.css
 │── script.js
 │── README.md
 
-🔧 Customization
+yaml
+Копировать код
 
-You can easily extend the app by adding:
+---
 
-A “favorites” joke list
+## 📦 Installation
 
-A copy-to-clipboard button
+1. Clone the project:
+   ```bash
+   git clone https://github.com/your/repo.git
+Open index.html in your browser.
 
-Text-to-speech jokes
+No backend required.
 
-Dark mode
-
-Just ask if you want help implementing any of these.
-
+⚙️ How Settings Work
+Saving
+js
+Копировать код
+localStorage.setItem("jokeSettings", JSON.stringify(settings));
+Loading
+js
+Копировать код
+JSON.parse(localStorage.getItem("jokeSettings"));
 📜 License
-
-This project is free to use and modify. No restrictions.
+Free to use and modify.
