@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="icon" href="./img/Smiling emoji.jpg" >
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="space"></div>
+    <div class="container">
+        <h1>Random Jokes Generator</h1>
+        <div class="wrapper">
+            <div class="content">
+                <button id="settingsBtn" class="settingBtn"><img src="./img/Setting icon.png" alt="settings"></button>
+                <img src="./img/Funny Emoji.png" alt="Funny Emoji">
+                <p id="joke"></p>
+                <button id="getJokeBtn" class="getBtn">Get random joke</button>
+            </div>
+        </div>
+    </div>  
+    
+    <div id="settingsModal" class="modal hidden">
+        <div class="modal-content">
+            <h1>Settings</h1>
+            
+            <div>
+                <h3>Black flags:</h3>
+                <div>
+                    <label>
+                        <input type="checkbox" id="flag" value="nsfw"> nsfw
+                    </label>
+                    <label>
+                        <input type="checkbox" id="flag" value="religious"> religious
+                    </label>
+                    <label>
+                        <input type="checkbox" id="flag" value="political"> political
+                    </label>
+                    <label>
+                        <input type="checkbox" id="flag" value="racist"> racist
+                    </label>
+                    <label>
+                        <input type="checkbox" id="flag" value="sexist"> sexist
+                    </label>
+                    <label>
+                        <input type="checkbox" id="flag" value="explicit"> explicit
+                    </label>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Language:</h3>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="de">German</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Joke type:</h3>
+                <select id="type">
+                    <option value="single">single</option>
+                    <option value="twopart">twopart</option>
+                </select>
+            </div>
+
+            <button id="closeModal" class="closeBtn">Close</button>
+        </div>
+    </div>
+    <div class="space"></div>
+    <script src="/script.js"></script>
+</body>
+</html>

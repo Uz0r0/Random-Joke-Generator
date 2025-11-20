@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Background-clr: #060606;
+    --Container-clr: #680303;
+    --Accent-clr: #F6E206;
+    --Title-ft: "Fontdiner Swanky", serif;
+    --Text-ft: "Itim", cursive;
+    --Btn-ft: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--Background-clr);
+    color: white;
+    font-family: var(--Text-ft);
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;  
+}
+
+h1{
+    font-family: var(--Title-ft);
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--Accent-clr);
+    text-align: center;
+}
+
+p{
+    font-size: 24px;
+    opacity: 0;
+}
+
+.space{
+    height: 15px;
+}
+
+.fade{
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    min-height: 100vh; 
+    padding: 0 50px;
+}
+
+.wrapper{
+    position: relative;
+    background-color: var(--Container-clr);
+    border-radius: 32px;
+    padding: 57px 150px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    text-align: center;
+}
+
+#joke{
+    white-space: pre-wrap;
+}
+
+.delivery{
+    color: var(--Accent-clr);
+}
+
+.settingBtn{
+    position: absolute;
+    top: 36px;
+    left: 46px;
+}
+
+.getBtn{
+    background-color: var(--Accent-clr);
+    padding: 14px 75px;
+    border-radius: 16px;
+    font-family: var(--Btn-ft);
+    font-size: 24px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.getBtn:hover{
+     transform: scale(1.1);
+}
+
+.content img {
+    width: 100%;
+    max-width: 180px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: var(--Background-clr);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.modal-content div{
+    margin-bottom: 15px;
+} 
+
+.modal-content h3{
+    margin-bottom: 5px;
+}
+
+.modal-content p{
+    color: white;
+}
+
+select {
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Accent-clr);
+    background-color: var(--Container-clr);
+    color: white;
+}
+
+.closeBtn{
+    background-color: var(--Accent-clr);
+    font-family: var(--Btn-ft);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 730px){
+
+    .wrapper{
+        padding: 57px 50px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .wrapper {
+        padding: 25px 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .getBtn {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+
+    .content {
+        gap: 28px;
+    }
+
+    .content img {
+        max-width: 140px;
+    }
+
+    .settingBtn{
+        left: 15px;
+    }
+
+    .settingBtn img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal-content{
+        width: 400px;
+        font-size: 16px;
+    }
+
+    .modal-content h3{
+        font-size: 20px;
+    }
+
+    select{
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+
+    .closeBtn{
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .wrapper {
+        padding: 20px 15px;
+    }
+
+    .getBtn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .container{
+        padding: 0 20px;
+    }
+
+    .modal-content{
+        width: 300px;
+    }
+}
