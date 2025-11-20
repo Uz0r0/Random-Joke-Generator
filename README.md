@@ -47,10 +47,18 @@ Open index.html in your browser.
 
 No backend required.
 
-⚙️ How Settings Work
-Saving
+### ⚙️ How Settings Work
+
+The application automatically remembers the user’s preferences (language, joke type, blacklist options) using **LocalStorage**.  
+This ensures that your settings stay the same even after refreshing or reopening the page.
+
+#### ✔️ Saving Settings
+When the user closes the settings modal, the current configuration is saved:
+
+```js
 localStorage.setItem("jokeSettings", JSON.stringify(settings));
-Loading
-JSON.parse(localStorage.getItem("jokeSettings"));
-📜 License
-Free to use and modify.
+
+### 📜 License
+
+This project is fully free to use, modify, and improve.
+No attribution required — enjoy coding!
