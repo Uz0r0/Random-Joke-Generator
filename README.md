@@ -57,8 +57,3 @@ When the user closes the settings modal, the current configuration is saved:
 
 ```js
    localStorage.setItem("jokeSettings", JSON.stringify(settings));
-
-### 📜 License
-
-This project is fully free to use, modify, and improve.
-No attribution required — enjoy coding!
